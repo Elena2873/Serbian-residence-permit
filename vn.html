@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ВНЖ в Сербии — сопровождение</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --bg:#f5f3ed;
+    --white:#fffefa;
+    --black:#151614;
+    --gray:#73736d;
+    --line:#dedcd4;
+    --red:#d84b36;
+    --red2:#b93d2b;
+    --dark:#181a18;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Manrope',Arial,sans-serif;
+    background:var(--bg);
+    color:var(--black);
+    line-height:1.5;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,input,textarea{
+    font-family:inherit;
+}
+
+.container{
+    width:min(1180px,calc(100% - 40px));
+    margin:auto;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    color:white;
+}
+
+.header-inner{
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:-.7px;
+}
+
+.logo span{
+    color:#ee725c;
+}
+
+.nav{
+    display:flex;
+    gap:30px;
+    font-size:12px;
+    color:rgba(255,255,255,.78);
+}
+
+.nav a:hover{
+    color:#fff;
+}
+
+.header-btn{
+    padding:10px 17px;
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:100px;
+    font-size:11px;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:780px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,12,13,.90) 0%,
+            rgba(8,12,13,.68) 48%,
+            rgba(8,12,13,.18) 100%
+        ),
+        url("https://www.tob.rs/images/tekstovi_kat/Zemun-1442730558.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-inner{
+    width:100%;
+    padding-top:65px;
+}
+
+.hero-content{
+    max-width:770px;
+}
+
+.eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#ef8a75;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    font-weight:800;
+    margin-bottom:23px;
+}
+
+.eyebrow:before{
+    content:"";
+    width:28px;
+    height:1px;
+    background:#ef8a75;
+}
+
+.hero h1{
+    font-size:clamp(48px,7vw,82px);
+    line-height:.98;
+    letter-spacing:-4.5px;
+    margin-bottom:28px;
+}
+
+.hero h1 span{
+    color:#ef725c;
+}
+
+.hero-text{
+    max-width:610px;
+    color:rgba(255,255,255,.76);
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:36px;
+}
+
+.hero-actions{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.primary{
+    background:var(--red);
+    color:white;
+    border:0;
+    padding:16px 23px;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:800;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.primary:hover{
+    background:var(--red2);
+    transform:translateY(-2px);
+}
+
+.hero-link{
+    color:rgba(255,255,255,.68);
+    font-size:12px;
+}
+
+.hero-bottom{
+    position:absolute;
+    bottom:25px;
+    left:0;
+    width:100%;
+    color:rgba(255,255,255,.46);
+    font-size:10px;
+}
+
+.hero-bottom-inner{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* =========================
+SECTION
+========================= */
+
+.section{
+    padding:110px 0;
+}
+
+.label{
+    color:var(--red);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    font-weight:800;
+    margin-bottom:17px;
+}
+
+.title{
+    font-size:48px;
+    line-height:1.04;
+    letter-spacing:-2.8px;
+}
+
+/* =========================
+BASES
+========================= */
+
+.bases{
+    background:var(--white);
+}
+
+.bases-head{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:end;
+    margin-bottom:55px;
+}
+.description{
+    color:var(--gray);
+    font-size:14px;
+    line-height:1.7;
+}
+
+.bases-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+}
+
+.base{
+    padding:32px;
+    min-height:260px;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    transition:.2s;
+}
+
+.base:hover{
+    background:#f2f0e9;
+}
+
+.base-number{
+    color:var(--red);
+    font-size:10px;
+    font-weight:800;
+    margin-bottom:45px;
+}
+
+.base h3{
+    font-size:21px;
+    letter-spacing:-.5px;
+    margin-bottom:10px;
+}
+
+.base p{
+    color:var(--gray);
+    font-size:13px;
+    line-height:1.65;
+    max-width:480px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:18px;
+}
+
+.tags span{
+    border:1px solid #d8d6ce;
+    border-radius:100px;
+    padding:5px 8px;
+    color:#686861;
+    font-size:9px;
+}
+
+/* =========================
+DARK COMPLEXITY
+========================= */
+
+.dark{
+    background:var(--dark);
+    color:#fff;
+}
+
+.dark .label{
+    color:#ef7a64;
+}
+
+.dark .description{
+    color:#8f9089;
+}
+
+.dark .title{
+    color:#fff;
+}
+
+.dark-head{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:end;
+    margin-bottom:60px;
+}
+
+.complexity{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:#383a37;
+}
+
+.complexity-item{
+    min-height:255px;
+    background:var(--dark);
+    padding:30px;
+}
+
+.complexity-number{
+    color:#e96f59;
+    font-size:10px;
+    font-weight:800;
+    margin-bottom:55px;
+}
+
+.complexity-item h3{
+    font-size:18px;
+    margin-bottom:11px;
+}
+
+.complexity-item p{
+    color:#888983;
+    font-size:12px;
+    line-height:1.7;
+}
+
+/* =========================
+WORK
+========================= */
+
+.work{
+    background:var(--bg);
+}
+
+.work-head{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:90px;
+    margin-bottom:55px;
+}
+
+.work-title{
+    font-size:56px;
+    line-height:.98;
+    letter-spacing:-3px;
+}
+
+.work-title span{
+    color:var(--red);
+}
+
+.work-text{
+    color:var(--gray);
+    font-size:14px;
+    line-height:1.75;
+}
+
+.work-box{
+    background:#fff;
+    border:1px solid var(--line);
+}
+
+.work-box-top{
+    padding:25px 28px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid var(--line);
+}
+
+.work-box-top strong{
+    font-size:14px;
+}
+
+.work-box-top span{
+    color:var(--red);
+    font-size:9px;
+    font-weight:800;
+}
+
+.requirements{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.requirement{
+    padding:24px 27px;
+    border-bottom:1px solid var(--line);
+}
+
+.requirement:nth-child(odd){
+    border-right:1px solid var(--line);
+}
+
+.req-num{
+    color:var(--red);
+    font-size:9px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.requirement strong{
+    display:block;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.requirement p{
+    color:var(--gray);
+    font-size:11px;
+    line-height:1.6;
+}
+
+/* =========================
+SERBIA PHOTO
+========================= */
+
+.serbia-photo{
+    min-height:620px;
+    display:flex;
+    align-items:center;
+    color:#fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,12,11,.84),
+            rgba(9,12,11,.20)
+        ),
+        url("https://secretsedition.com/wp-content/uploads/2020/09/DSC_8072-Panorama-1-1024x550.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.photo-content{
+    max-width:680px;
+}
+
+.photo-content .label{
+    color:#ef846f;
+}
+
+.photo-content h2{
+    font-size:58px;
+    line-height:1.01;
+    letter-spacing:-3.5px;
+    margin-bottom:23px;
+}
+
+.photo-content p{
+    max-width:510px;
+    color:rgba(255,255,255,.70);
+    font-size:14px;
+}
+
+/* =========================
+PROCESS
+========================= */
+
+.process{
+    background:var(--white);
+}
+
+.process-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:55px;
+}
+
+.process-head .description{
+    max-width:430px;
+}
+
+.process-list{
+    border-top:1px solid var(--line);
+}
+.process-row{
+    display:grid;
+    grid-template-columns:80px 1fr 1fr;
+    gap:25px;
+    padding:27px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.process-num{
+    color:var(--red);
+    font-size:10px;
+    font-weight:800;
+}
+
+.process-row h3{
+    font-size:17px;
+}
+
+.process-row p{
+    color:var(--gray);
+    font-size:12px;
+}
+
+/* =========================
+FAQ
+========================= */
+
+.faq{
+    background:var(--bg);
+}
+
+.faq-list{
+    margin-top:50px;
+    border-top:1px solid var(--line);
+}
+
+.faq-item{
+    border-bottom:1px solid var(--line);
+}
+
+.faq-question{
+    width:100%;
+    border:0;
+    background:none;
+    padding:23px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    text-align:left;
+    font-size:15px;
+    font-weight:700;
+    color:var(--black);
+}
+
+.plus{
+    color:var(--red);
+    font-size:23px;
+    transition:.2s;
+}
+
+.answer{
+    display:none;
+    max-width:750px;
+    color:var(--gray);
+    font-size:12px;
+    line-height:1.7;
+    padding-bottom:24px;
+}
+
+.faq-item.open .answer{
+    display:block;
+}
+
+.faq-item.open .plus{
+    transform:rotate(45deg);
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+    min-height:620px;
+    display:flex;
+    align-items:center;
+    color:#fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,11,10,.90),
+            rgba(9,11,10,.35)
+        ),
+        url("https://www.tob.rs/images/tekstovi_kat/Zemun-1442730558.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.cta-content{
+    max-width:720px;
+}
+
+.cta .label{
+    color:#ef806b;
+}
+
+.cta h2{
+    font-size:61px;
+    line-height:1;
+    letter-spacing:-3.7px;
+    margin-bottom:23px;
+}
+
+.cta p{
+    max-width:550px;
+    color:rgba(255,255,255,.71);
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.form{
+    display:flex;
+    gap:8px;
+    max-width:570px;
+}
+
+.form input{
+    flex:1;
+    min-width:0;
+    padding:15px;
+    border:1px solid rgba(255,255,255,.27);
+    background:rgba(255,255,255,.09);
+    color:#fff;
+    outline:none;
+    border-radius:5px;
+}
+
+.form input::placeholder{
+    color:rgba(255,255,255,.48);
+}
+
+.form button{
+    white-space:nowrap;
+}
+
+.note{
+    margin-top:13px;
+    color:rgba(255,255,255,.40);
+    font-size:9px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#111;
+    color:#777;
+    padding:28px 0;
+    font-size:9px;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.footer-logo{
+    color:#fff;
+    font-weight:800;
+}
+
+/* =========================
+MODAL
+========================= */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:100;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-box{
+    width:min(520px,100%);
+    background:#faf9f5;
+    color:#151614;
+    padding:38px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:18px;
+    top:11px;
+    font-size:27px;
+    color:#777;
+    cursor:pointer;
+}
+
+.modal h2{
+    font-size:29px;
+    line-height:1.05;
+    letter-spacing:-1.5px;
+    margin-bottom:10px;
+}
+
+.modal-description{
+    color:var(--gray);
+    font-size:12px;
+    line-height:1.6;
+    margin-bottom:23px;
+}
+
+.modal input,
+.modal textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid var(--line);
+    background:#fff;
+    margin-bottom:8px;
+    outline:none;
+    resize:none;
+}
+
+.modal button{
+    width:100%;
+    margin-top:4px;
+}
+
+.success{
+    display:none;
+    text-align:center;
+    padding:35px 0;
+}
+
+.success h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.success p{
+    color:var(--gray);
+    font-size:12px;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:850px){
+
+    .container{
+        width:calc(100% - 28px);
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .header-inner{
+        height:70px;
+    }
+
+    .header-btn{
+        padding:9px 12px;
+    }
+    .hero{
+        min-height:720px;
+        background:
+            linear-gradient(
+                rgba(8,12,13,.72),
+                rgba(8,12,13,.91)
+            ),
+            url("https://www.tob.rs/images/tekstovi_kat/Zemun-1442730558.jpg");
+
+        background-size:cover;
+        background-position:center;
+    }
+
+    .hero-inner{
+        padding-top:70px;
+    }
+
+    .hero h1{
+        font-size:48px;
+        letter-spacing:-2.8px;
+    }
+
+    .hero-text{
+        font-size:14px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .hero-bottom{
+        display:none;
+    }
+
+    .section{
+        padding:75px 0;
+    }
+
+    .bases-head,
+    .dark-head,
+    .work-head{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .title{
+        font-size:37px;
+        letter-spacing:-2px;
+    }
+
+    .bases-grid{
+        grid-template-columns:1fr;
+    }
+
+    .base{
+        min-height:235px;
+    }
+
+    .complexity{
+        grid-template-columns:1fr;
+    }
+
+    .requirements{
+        grid-template-columns:1fr;
+    }
+
+    .requirement:nth-child(odd){
+        border-right:0;
+    }
+
+    .work-title{
+        font-size:46px;
+        letter-spacing:-2.5px;
+    }
+
+    .serbia-photo{
+        min-height:560px;
+    }
+
+    .photo-content h2{
+        font-size:43px;
+        letter-spacing:-2.4px;
+    }
+
+    .process-head{
+        display:block;
+    }
+
+    .process-head .description{
+        margin-top:18px;
+    }
+
+    .process-row{
+        grid-template-columns:45px 1fr;
+        gap:12px;
+    }
+
+    .process-row p{
+        grid-column:2;
+    }
+
+    .cta{
+        min-height:650px;
+    }
+
+    .cta h2{
+        font-size:44px;
+        letter-spacing:-2.5px;
+    }
+
+    .form{
+        flex-direction:column;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+    }
+
+    .modal-box{
+        padding:32px 22px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+    <div class="container header-inner">
+
+        <div class="logo">
+            SERBIA<span>.</span>RESIDENCE
+        </div>
+
+        <nav class="nav">
+            <a href="#bases">Основания</a>
+            <a href="#work">Работа</a>
+            <a href="#process">Как работаю</a>
+            <a href="#faq">Вопросы</a>
+        </nav>
+
+        <a href="#contact" class="header-btn">
+            Обсудить ситуацию
+        </a>
+
+    </div>
+</header>
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-inner">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                ВНЖ В СЕРБИИ
+            </div>
+
+            <h1>
+                На каком основании
+                вы можете получить
+                <span>ВНЖ?</span>
+            </h1>
+
+            <p class="hero-text">
+                Работа, предпринимательство, недвижимость, учёба,
+                семья и другие основания. Я разбираю вашу ситуацию
+                и помогаю понять, какой путь подходит именно вам
+                и что потребуется для оформления.
+            </p>
+
+            <div class="hero-actions">
+
+                <button class="primary" onclick="openModal()">
+                    Обсудить мою ситуацию
+                </button>
+
+                <a href="#bases" class="hero-link">
+                    Посмотреть основания ↓
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="container hero-bottom-inner">
+            <span>Белград · Земун · Сербия</span>
+            <span>Индивидуальное сопровождение</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+BASES
+========================= -->
+
+<section class="section bases" id="bases">
+
+    <div class="container">
+
+        <div class="bases-head">
+
+            <div>
+
+                <div class="label">
+                    Основания
+                </div>
+
+                <h2 class="title">
+                    Сначала нужно понять,
+                    на каком основании
+                    вы можете остаться
+                </h2>
+</div>
+
+            <p class="description">
+                Основание определяет дальнейший процесс.
+                Для каждого варианта отличаются требования,
+                документы и последовательность действий.
+            </p>
+
+        </div>
+
+
+        <div class="bases-grid">
+
+
+            <article class="base">
+
+                <div class="base-number">01 / РАБОТА</div>
+
+                <h3>Работа в Сербии</h3>
+
+                <p>
+                    Один из основных вариантов для тех, кто
+                    работает или планирует работать у сербского
+                    работодателя.
+                </p>
+
+                <div class="tags">
+                    <span>работодатель</span>
+                    <span>трудоустройство</span>
+                    <span>документы</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">02 / БИЗНЕС</div>
+
+                <h3>Предпринимательство</h3>
+
+                <p>
+                    Основание, связанное с самостоятельной
+                    предпринимательской деятельностью в Сербии.
+                    Требования зависят от конкретной ситуации.
+                </p>
+
+                <div class="tags">
+                    <span>предприниматель</span>
+                    <span>деятельность</span>
+                    <span>подтверждения</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">03 / НЕДВИЖИМОСТЬ</div>
+
+                <h3>Недвижимость</h3>
+
+                <p>
+                    Владение недвижимостью в Сербии может быть
+                    основанием для временного проживания при
+                    соблюдении предусмотренных требований.
+                </p>
+
+                <div class="tags">
+                    <span>объект</span>
+                    <span>право собственности</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">04 / УЧЁБА</div>
+
+                <h3>Обучение</h3>
+
+                <p>
+                    Обучение в сербском образовательном учреждении.
+                    Необходимо подтвердить соответствующий статус
+                    и основание пребывания.
+                </p>
+
+                <div class="tags">
+                    <span>учебное заведение</span>
+                    <span>подтверждение</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">05 / СЕМЬЯ</div>
+
+                <h3>Воссоединение семьи</h3>
+
+                <p>
+                    Основание для членов семьи в зависимости
+                    от статуса родственника и конкретных
+                    обстоятельств.
+                </p>
+
+                <div class="tags">
+                    <span>родство</span>
+                    <span>семейный статус</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">06 / СУПРУГ / СЕМЬЯ</div>
+
+                <h3>Семья с гражданином Сербии</h3>
+
+                <p>
+                    Отдельный порядок применяется в зависимости
+                    от семейного статуса и подтверждающих документов.
+                </p>
+
+                <div class="tags">
+                    <span>брак</span>
+                    <span>документы</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+
+                <div class="base-number">07 / ДРУГИЕ СИТУАЦИИ</div>
+
+                <h3>Другие основания</h3>
+
+                <p>
+                    В отдельных случаях могут применяться другие
+                    основания временного проживания. Их нужно
+                    рассматривать индивидуально.
+                </p>
+
+                <div class="tags">
+                    <span>индивидуальный разбор</span>
+                </div>
+
+            </article>
+
+
+            <article class="base">
+<div class="base-number">08 / НЕ ЗНАЮ</div>
+
+                <h3>Не знаете, что подходит?</h3>
+
+                <p>
+                    Не обязательно заранее разбираться во всех
+                    основаниях. Можно описать вашу ситуацию,
+                    а я определю, с чего стоит начать.
+                </p>
+
+                <div class="tags">
+                    <span>разбор ситуации</span>
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+COMPLEXITY
+========================= -->
+
+<section class="section dark">
+
+    <div class="container">
+
+        <div class="dark-head">
+
+            <div>
+
+                <div class="label">
+                    Почему это сложно
+                </div>
+
+                <h2 class="title">
+                    ВНЖ — это не одна
+                    анкета и один документ
+                </h2>
+
+            </div>
+
+            <p class="description">
+                Даже когда основание уже понятно, остаётся
+                разобраться с документами, требованиями,
+                последовательностью и действиями нескольких сторон.
+            </p>
+
+        </div>
+
+
+        <div class="complexity">
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">01</div>
+
+                <h3>Основание</h3>
+
+                <p>
+                    Нужно определить, действительно ли выбранное
+                    основание подходит под вашу ситуацию.
+                </p>
+
+            </div>
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">02</div>
+
+                <h3>Документы</h3>
+
+                <p>
+                    Для каждого основания существует свой набор
+                    документов и подтверждений.
+                </p>
+
+            </div>
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">03</div>
+
+                <h3>Последовательность</h3>
+
+                <p>
+                    Важно понимать не только что собрать,
+                    но и что делать первым, а что после этого.
+                </p>
+
+            </div>
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">04</div>
+
+                <h3>Переводы и оформление</h3>
+
+                <p>
+                    Иностранные документы могут требовать
+                    перевода и дополнительного оформления.
+                </p>
+
+            </div>
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">05</div>
+
+                <h3>Другие участники</h3>
+
+                <p>
+                    При основании через работу часть действий
+                    зависит от работодателя и его документов.
+                </p>
+
+            </div>
+
+
+            <div class="complexity-item">
+
+                <div class="complexity-number">06</div>
+
+                <h3>Изменения</h3>
+
+                <p>
+                    Смена работы, документов, семейного статуса
+                    или обстоятельств может изменить дальнейшие шаги.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+WORK
+========================= -->
+
+<section class="section work" id="work">
+
+    <div class="container">
+
+
+        <div class="work-head">
+
+            <div>
+
+                <div class="label">
+                    Основное направление
+                </div>
+
+                <h2 class="work-title">
+                    ВНЖ
+                    <span>через работу</span>
+                </h2>
+
+            </div>
+
+
+            <p class="work-text">
+                Если ваше основание — работа, я отдельно разбираю
+                вашу ситуацию: работодателя, документы, статус
+                и порядок дальнейших действий.
+                Не отправляю один универсальный список всем подряд.
+            </p>
+
+        </div>
+
+
+        <div class="work-box">
+
+
+            <div class="work-box-top">
+<strong>
+                    Что необходимо учитывать
+                </strong>
+
+                <span>
+                    ЗАВИСИТ ОТ СИТУАЦИИ
+                </span>
+
+            </div>
+
+
+            <div class="requirements">
+
+
+                <div class="requirement">
+
+                    <div class="req-num">01</div>
+
+                    <strong>
+                        Ваши документы
+                    </strong>
+
+                    <p>
+                        Паспорт, документы о статусе и другие
+                        необходимые подтверждения.
+                    </p>
+
+                </div>
+
+
+                <div class="requirement">
+
+                    <div class="req-num">02</div>
+
+                    <strong>
+                        Работодатель
+                    </strong>
+
+                    <p>
+                        Информация и документы со стороны
+                        сербского работодателя.
+                    </p>
+
+                </div>
+
+
+                <div class="requirement">
+
+                    <div class="req-num">03</div>
+
+                    <strong>
+                        Основание занятости
+                    </strong>
+
+                    <p>
+                        Документы, подтверждающие соответствующее
+                        основание для проживания.
+                    </p>
+
+                </div>
+
+
+                <div class="requirement">
+
+                    <div class="req-num">04</div>
+
+                    <strong>
+                        Переводы и документы
+                    </strong>
+
+                    <p>
+                        Проверка того, какие документы необходимо
+                        подготовить и каким образом их оформить.
+                    </p>
+
+                </div>
+
+
+                <div class="requirement">
+
+                    <div class="req-num">05</div>
+
+                    <strong>
+                        Подача
+                    </strong>
+
+                    <p>
+                        Подготовка к подаче и соблюдение
+                        необходимой последовательности действий.
+                    </p>
+
+                </div>
+
+
+                <div class="requirement">
+
+                    <div class="req-num">06</div>
+
+                    <strong>
+                        Дальнейшие действия
+                    </strong>
+
+                    <p>
+                        После подачи могут потребоваться
+                        дополнительные действия или документы.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+SERBIA NATURE
+========================= -->
+
+<section class="serbia-photo">
+
+    <div class="container">
+
+        <div class="photo-content">
+
+            <div class="label">
+                СЕРБИЯ
+            </div>
+
+            <h2>
+                Разобраться с ВНЖ —
+                значит разобраться
+                с тем, как вы будете
+                жить здесь.
+            </h2>
+
+            <p>
+                Поэтому лучше заранее понимать свой статус,
+                основание и последовательность действий,
+                чем разбираться с проблемой уже в процессе.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+PROCESS
+========================= -->
+
+<section class="section process" id="process">
+
+    <div class="container">
+
+
+        <div class="process-head">
+
+            <div>
+
+                <div class="label">
+                    Как я работаю
+                </div>
+
+                <h2 class="title">
+                    Сначала ситуация.
+                    Потом документы.
+                </h2>
+
+            </div>
+
+
+            <p class="description">
+                Я не начинаю с универсального списка документов.
+                Сначала нужно понять, что происходит именно у вас.
+            </p>
+
+        </div>
+
+
+        <div class="process-list">
+
+
+            <div class="process-row">
+
+                <div class="process-num">01</div>
+<h3>
+                    Вы рассказываете ситуацию
+                </h3>
+
+                <p>
+                    Где вы сейчас, чем занимаетесь,
+                    есть ли работа или работодатель,
+                    какой у вас статус.
+                </p>
+
+            </div>
+
+
+            <div class="process-row">
+
+                <div class="process-num">02</div>
+
+                <h3>
+                    Я разбираю основание
+                </h3>
+
+                <p>
+                    Определяю подходящий вариант
+                    и ключевые требования.
+                </p>
+
+            </div>
+
+
+            <div class="process-row">
+
+                <div class="process-num">03</div>
+
+                <h3>
+                    Определяем объём работы
+                </h3>
+
+                <p>
+                    Вы заранее понимаете,
+                    какие задачи я беру на себя
+                    и сколько это стоит.
+                </p>
+
+            </div>
+
+
+            <div class="process-row">
+
+                <div class="process-num">04</div>
+
+                <h3>
+                    Дальше работаем по плану
+                </h3>
+
+                <p>
+                    Подготовка документов, вопросы
+                    и сопровождение в рамках
+                    согласованного объёма.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+FAQ
+========================= -->
+
+<section class="section faq" id="faq">
+
+    <div class="container">
+
+        <div class="label">
+            Частые вопросы
+        </div>
+
+        <h2 class="title">
+            Что важно знать
+            до начала работы
+        </h2>
+
+
+        <div class="faq-list">
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Я ещё не работаю в Сербии. Есть смысл обращаться?
+                    </span>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+                <div class="answer">
+                    Да. Можно заранее разобрать, какой путь через
+                    работу возможен и что потребуется после
+                    нахождения работодателя.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        У меня уже есть работодатель. Что делать?
+                    </span>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+                <div class="answer">
+                    Я могу разобрать вашу текущую ситуацию,
+                    документы работодателя и ваши документы,
+                    после чего определить дальнейшую последовательность.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Можно ли обратиться, если процесс уже начат?
+                    </span>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+                <div class="answer">
+                    Да. В таком случае сначала нужно определить,
+                    какие действия уже выполнены и на каком этапе
+                    находится процесс.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>
+                        Сколько стоит сопровождение?
+                    </span>
+
+                    <span class="plus">+</span>
+
+                </button>
+
+                <div class="answer">
+                    Стоимость зависит от основания и объёма работы.
+                    Перед началом сопровождения стоимость
+                    согласовывается заранее.
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+<div class="cta-content">
+
+            <div class="label">
+                Индивидуальный разбор
+            </div>
+
+            <h2>
+                Расскажите,
+                что у вас сейчас
+            </h2>
+
+            <p>
+                Напишите, где вы находитесь, работаете ли уже
+                в Сербии, есть ли работодатель и на каком этапе
+                вы сейчас. Я разберу ситуацию и скажу,
+                с чего имеет смысл начать.
+            </p>
+
+
+            <form class="form" onsubmit="submitForm(event)">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Ваше имя"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="contact"
+                    placeholder="Telegram / телефон"
+                    required
+                >
+
+                <button class="primary" type="submit">
+                    Обсудить
+                </button>
+
+            </form>
+
+
+            <div class="note">
+                Стоимость работы согласовывается до начала сопровождения.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="footer-logo">
+            SERBIA.RESIDENCE
+        </div>
+
+        <div>
+            ВНЖ в Сербии · индивидуальное сопровождение
+        </div>
+
+        <div>
+            © 2026
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+MODAL
+========================= -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <div class="close" onclick="closeModal()">
+            ×
+        </div>
+
+
+        <div id="modalForm">
+
+            <div class="label">
+                Ваш запрос
+            </div>
+
+            <h2>
+                Обсудим вашу ситуацию
+            </h2>
+
+            <p class="modal-description">
+                Коротко расскажите, где вы сейчас
+                и какое основание рассматриваете.
+            </p>
+
+
+            <input
+                type="text"
+                id="modalName"
+                placeholder="Ваше имя"
+            >
+
+            <input
+                type="text"
+                id="modalContact"
+                placeholder="Telegram / телефон"
+            >
+
+            <textarea
+                id="modalMessage"
+                rows="5"
+                placeholder="Например: работаю в Сербии, есть работодатель..."
+            ></textarea>
+
+
+            <button class="primary" onclick="sendModal()">
+                Отправить запрос
+            </button>
+
+        </div>
+
+
+        <div class="success" id="success">
+
+            <h3>
+                Запрос отправлен
+            </h3>
+
+            <p>
+                Я свяжусь с вами для обсуждения ситуации.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* MODAL */
+
+function openModal(){
+
+    document
+        .getElementById('modal')
+        .classList
+        .add('active');
+
+}
+
+function closeModal(){
+
+    document
+        .getElementById('modal')
+        .classList
+        .remove('active');
+
+}
+
+
+document
+    .getElementById('modal')
+    .addEventListener('click',function(e){
+
+        if(e.target === this){
+            closeModal();
+        }
+
+    });
+
+
+/* MAIN FORM */
+
+function submitForm(e){
+
+    e.preventDefault();
+
+    const name =
+        document.getElementById('name').value.trim();
+
+    const contact =
+        document.getElementById('contact').value.trim();
+
+    if(!name || !contact){
+
+        alert('Укажите имя и способ связи.');
+
+        return;
+    }
+
+    openModal();
+
+    document.getElementById('modalName').value = name;
+    document.getElementById('modalContact').value = contact;
+
+}
+
+
+/* MODAL FORM */
+
+function sendModal(){
+
+    const name =
+        document.getElementById('modalName').value.trim();
+
+    const contact =
+        document.getElementById('modalContact').value.trim();
+const message =
+        document.getElementById('modalMessage').value.trim();
+
+
+    if(!name || !contact){
+
+        alert('Укажите имя и способ связи.');
+
+        return;
+    }
+
+
+    /*
+        Здесь подключается отправка заявки:
+        Telegram Bot / CRM / Formspree / backend.
+    */
+
+    console.log({
+        name:name,
+        contact:contact,
+        message:message
+    });
+
+
+    document
+        .getElementById('modalForm')
+        .style
+        .display = 'none';
+
+    document
+        .getElementById('success')
+        .style
+        .display = 'block';
+
+}
+
+
+/* FAQ */
+
+document
+    .querySelectorAll('.faq-question')
+    .forEach(function(button){
+
+        button.addEventListener('click',function(){
+
+            this
+                .parentElement
+                .classList
+                .toggle('open');
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
